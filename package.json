@@ -1,0 +1,21 @@
+{
+  "name": "chrome-ai-extension-skill",
+  "version": "1.0.0",
+  "description": "Manifest V3 AI SEO analyzer with optional OpenAI integration and typed messaging.",
+  "type": "module",
+  "scripts": {
+    "clean": "rimraf dist",
+    "generate:icons": "node scripts/generate-icons.js",
+    "build": "npm run clean && npm run generate:icons && tsc -p tsconfig.build.json && node scripts/copy-static.js",
+    "test": "vitest run",
+    "lint": "tsc --noEmit -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.266",
+    "@types/node": "^22.0.0",
+    "cpy": "^10.1.0",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  }
+}
