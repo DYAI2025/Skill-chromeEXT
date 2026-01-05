@@ -62,13 +62,5 @@ npm run build
 - Trage einen gültigen Schlüssel im Popup ein. Fehler beim API-Aufruf werden im Ergebnis als Fallback-Nachricht angezeigt.
 - Für Datenschutz-restriktive Umgebungen kann der AI-Teil ausgelassen werden: Die heuristische Auswertung läuft offline.
 
-## System-Anweisung für GPT
-Um den Skill anzuwenden, nutze die System-Anweisung aus `SKILL.md` (Abschnitt "System-Anweisung") in deinem Custom GPT. Kernpunkte:
-- Rolle: "GPT-5.1-Codex-Max" als MV3-Architekt mit Fokus auf Sicherheit, minimale Permissions, keine externen Skripte.
-- Workflow: Scope klären → Architektur/Manifest skizzieren → Code-Snippets für background/content/ui/offscreen/shared → Security/Privacy-Hinweise.
-- Ausgabeformat: kurzer Dateibaum, Manifest-Vorschlag, kommentierte Snippets, Checklisten, Build/Packaging-Schritte.
-- Tests & Debug: Unit/E2E-Tests vorschlagen, `chrome://extensions` und Service-Worker-Logs nennen.
-- Compliance: Keine Analytics ohne Opt-in, Host-Permissions minimieren, Policies nennen.
-
 ## Lizenz
 MIT
